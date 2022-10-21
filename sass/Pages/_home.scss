@@ -1,0 +1,44 @@
+
+
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+
+    font-size: 1.25rem;
+    color: $color-darkgrey;
+    
+    background-color: $color-grey;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25) inset;
+    &__icon {
+        margin-right: 1rem;
+    }
+    &__text {
+        font-weight: $font-weight-medium;
+    }
+}
+
+.introduction {
+    padding: 2rem 1rem 4rem 1rem;
+    text-align: center;
+    background-color: $color-lightgrey;
+
+    &__title {
+        margin-bottom: 1rem;
+        font-weight: $font-weight-black;
+    }
+    &__subtitle {
+        margin-bottom: 2rem;
+        font-weight: $font-weight-light;
+        color: $color-darkgrey;
+    }
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+        padding: 1rem 1.25rem;
+        border-radius: 40px;
+        box-shadow: $box-shadow;
+        background: linear-gradient(355deg, $color-primary 10%, $color-secondary 90%);
+        font-weight: $font-weight-medium;
+    }
+}
