@@ -25,10 +25,9 @@
 
     &__title {
         margin-bottom: 1rem;
-        font-weight: $font-weight-black;
     }
     &__subtitle {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         font-weight: $font-weight-light;
         color: $color-darkgrey;
     }
@@ -42,3 +41,15 @@
         font-weight: $font-weight-medium;
     }
 }
+
+.functioning {
+    padding: 3rem 1.5rem;
+}
+
+.restaurants {
+    padding: 3rem 1.5rem;
+    background-color: $color-lightgrey;
+}
+
+
+
