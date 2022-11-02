@@ -1,0 +1,26 @@
+.footer {
+    background-color: $color-darkgrey;
+    padding: 1rem 2rem;
+    
+    &__title {
+        font-family: $family-title;
+        color: $color-white;
+        margin-bottom: 1rem;
+    }
+    &__logo {
+        height: 1rem;
+        filter: invert(1);
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    &__item {
+        list-style: none;
+    }
+}

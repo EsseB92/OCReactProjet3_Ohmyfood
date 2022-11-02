@@ -1,0 +1,29 @@
+.card {
+    display: block;
+    position: relative;
+    border-radius: 1rem;
+    background-color: $color-white;
+    text-decoration: none;
+    color: $color-black;
+    box-shadow: $box-shadow;
+    &__img {
+        height: 13rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    &__new {
+        padding: .5rem .75rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border-radius: .25rem;
+        background-color: $color-tertiary;
+        color: darken($color: $color-tertiary, $amount: 50%);
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}

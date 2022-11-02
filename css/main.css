@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     Author : Bertrand Sudre ;
 */
@@ -15,6 +16,7 @@ body {
   height: 100%;
 }
 
+/* Annulation des valeurs par défaut des navigateurs */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -22,19 +24,6 @@ body {
 h2 {
   font-size: 1.75rem;
   font-weight: 900;
-}
-
-.header {
-  height: 2rem;
-  padding: 1rem 0 1rem 0;
-  text-align: center;
-  vertical-align: center;
-}
-.header > h1 {
-  height: 100%;
-}
-.header__img {
-  height: 100%;
 }
 
 .ordered-list {
@@ -88,6 +77,76 @@ h2 {
   font-weight: 500;
 }
 
+.card {
+  display: block;
+  position: relative;
+  border-radius: 1rem;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.card__img {
+  height: 13rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__new {
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.25rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header {
+  height: 2rem;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  vertical-align: center;
+}
+.header > h1 {
+  height: 100%;
+}
+.header__img {
+  height: 100%;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer__logo {
+  height: 1rem;
+  filter: invert(1);
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__item {
+  list-style: none;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -134,4 +193,11 @@ h2 {
 .restaurants {
   padding: 3rem 1.5rem;
   background-color: #F7F7F7;
+}
+
+.cards {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }/*# sourceMappingURL=main.css.map */

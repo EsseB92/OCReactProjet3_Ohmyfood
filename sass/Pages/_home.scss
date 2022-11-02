@@ -51,5 +51,10 @@
     background-color: $color-lightgrey;
 }
 
-
+.cards {
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
