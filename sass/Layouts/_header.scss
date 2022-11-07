@@ -3,7 +3,15 @@
     padding: 1rem 0 1rem 0;
     text-align: center;
     vertical-align: center;
-    &>h1{
+    position: relative;
+    &__icon {
+        position: absolute;
+        left: 1rem;
+        font-size: 1.5rem;
+        color: $color-black;
+        vertical-align: center;
+    }
+    &__logo {
         height: 100%;
     }
     &__img {

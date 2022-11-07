@@ -14,6 +14,8 @@
 
 body {
   height: 100%;
+  max-width: 1400px;
+  margin: auto;
 }
 
 /* Annulation des valeurs par défaut des navigateurs */
@@ -108,13 +110,63 @@ h2 {
   padding: 1rem;
 }
 
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.submenu__title {
+  text-transform: uppercase;
+  color: #7E7E7E;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.25rem;
+  border-bottom-color: #99E2D0;
+  width: 3rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.menu-item__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.menu-item__title {
+  font-weight: 700;
+}
+.menu-item__desc {
+  font-weight: 300;
+}
+.menu-item__price {
+  font-weight: 700;
+  color: #353535;
+}
+
 .header {
   height: 2rem;
   padding: 1rem 0 1rem 0;
   text-align: center;
   vertical-align: center;
+  position: relative;
 }
-.header > h1 {
+.header__icon {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: #000;
+  vertical-align: center;
+}
+.header__logo {
   height: 100%;
 }
 .header__img {
@@ -200,4 +252,41 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.background {
+  width: 100%;
+}
+.background__img {
+  width: 100%;
+  max-height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  padding: 2rem 1rem;
+  background-color: #F7F7F7;
+  border-radius: 40px;
+  margin-top: -3rem;
+  position: relative;
+}
+.menu__header {
+  margin-bottom: 2rem;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+}
+.menu__footer {
+  text-align: center;
+}
+.menu__btn {
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(355deg, #9356DC 10%, #FF79DA 90%);
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

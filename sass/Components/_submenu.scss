@@ -1,0 +1,52 @@
+.submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    &__title {
+        text-transform: uppercase;
+        color: $color-icongrey;
+        font-weight: $font-weight-medium;
+
+        // Underline the text
+        padding-bottom: .5rem;
+        border-bottom-style: solid;
+        border-bottom-width: .25rem;
+        border-bottom-color: $color-tertiary;
+        width: 3rem;
+    }
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background: $color-white;
+    padding: 1rem;
+
+    border-radius: $radius-card;
+    box-shadow: $box-shadow;
+
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+
+    &__title {
+        font-weight: $font-weight-bold;
+    }
+
+    &__desc {
+        font-weight: $font-weight-light;
+    }
+
+    &__price {
+        font-weight: $font-weight-bold;
+        color: $color-darkgrey;
+    }
+
+}
