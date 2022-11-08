@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - La Note Enchantée</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" >
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="../index.html">
+            <i class="fa-solid fa-arrow-left header__icon"></i>
+        </a>
+        <h1 class="header__logo">
+            <a href="../index.html">
+                <img class="header__img" src="../images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
+            </a>
+        </h1>
+    </header>
+
+    <main class="main">
+        <!-- Section dédiée à l'image du restaurant -->
+        <aside class="background">
+            <img class="background__img" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image d'un plat du restaurant">
+        </aside>
+
+        <!-- Section dédiée aux menus -->
+        <section id="menu" class="menu">
+            <header class="menu__header">
+                <h2 class="menu__title">Le note enchantée</h2>
+                <i></i>
+                <i></i>
+            </header>
+            
+            <div class="submenus">
+
+                <section class="submenu">
+                    <h3 class="submenu__title">Entrées</h3>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Ravioles de foie gras</h4>
+                            <p class="menu-item__desc">Accompagnés de leur crème à la truffe</p>
+                        </header>
+                        <span class="menu-item__price">25€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Caviar osciètre</h4>
+                            <p class="menu-item__desc">Sur blini à la farine de blé noir</p>
+                        </header>
+                        <span class="menu-item__price">35€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Homard et espuma de potiron</h4>
+                            <p class="menu-item__desc">Mariné aux zestes d'orange</p>
+                        </header>
+                        <span class="menu-item__price">20€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Foie gras de canard cuit entier</h4>
+                            <p class="menu-item__desc">Confiture de figue et pain toasté</p>
+                        </header>
+                        <span class="menu-item__price">35€</span>
+                    </div>
+                </section>
+
+                <section class="submenu">
+                    <h3 class="submenu__title">Plats</h3>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Noix de coquilles Saint-Jacques</h4>
+                            <p class="menu-item__desc">Sur lit de purée de céleri-rave</p>
+                        </header>
+                        <span class="menu-item__price">40€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Langoustine poêlée</h4>
+                            <p class="menu-item__desc">Purée de patate douce</p>
+                        </header>
+                        <span class="menu-item__price">35€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Mijoté de queue de boeuf</h4>
+                            <p class="menu-item__desc">Et riz sauvage aux zestes de citron</p>
+                        </header>
+                        <span class="menu-item__price">44€</span>
+                    </div>
+                </section>
+
+                <section class="submenu">
+                    <h3 class="submenu__title">Desserts</h3>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Macaron noisette et chocolat</h4>
+                            <p class="menu-item__desc">Glace au caramel brun et sel de Guérande</p>
+                        </header>
+                        <span class="menu-item__price">18€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Baba au rhum revisité</h4>
+                            <p class="menu-item__desc">Avec son coulis de citron</p>
+                        </header>
+                        <span class="menu-item__price">22€</span>
+                    </div>
+                    <div class="menu-item">
+                        <header class="menu-item__header">
+                            <h4 class="menu-item__title">Tarte au citron meringuée</h4>
+                            <p class="menu-item__desc">Déstructurée</p>
+                        </header>
+                        <span class="menu-item__price">23€</span>
+                    </div>
+                </section>
+
+            </div>
+
+            <footer class="menu__footer">
+                <button class="menu__btn">Commander</button>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <h4 class="footer__title">
+            <img class="footer__logo" src="../images/logo/ohmyfood.png" alt="ohmyfood">
+        </h4>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a class="footer__link" href="#footer">
+                    <i class="fa-solid fa-utensils footer__icon"></i>
+                    Proposer un restaurant
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a class="footer__link" href="#footer">
+                    <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                    Devenir partenaire
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a class="footer__link" href="#footer">Mentions légales</a>
+            </li>
+
+            <li class="footer__item">
+                <a class="footer__link" href="mailto:contact@ohmyfood.com" target="_blank">Contact</a>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
