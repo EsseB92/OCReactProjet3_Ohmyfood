@@ -43,6 +43,10 @@
         &--highlight {
             background-color: rgba($color-primary, 0.10);
         }
+
+        @include larger-than-mobile {
+            flex: 1;
+        }
     }
     &__icon {
         color: $color-icongrey;
@@ -56,5 +60,8 @@
     }
     &__text {
         font-weight: $font-weight-medium;
+    }
+    @include larger-than-mobile {
+        flex-direction: row;
     }
 }

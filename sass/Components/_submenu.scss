@@ -16,6 +16,9 @@
         border-bottom-color: $color-tertiary;
         width: 3rem;
     }
+    @include larger-than-mobile{
+        flex: 1;
+    }
 }
 
 .menu-item {

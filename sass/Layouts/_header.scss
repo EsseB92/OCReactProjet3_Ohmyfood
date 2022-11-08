@@ -14,6 +14,11 @@
     &__logo {
         height: 100%;
     }
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-family: $family-title;
+    }
     &__img {
         height: 100%;
     }

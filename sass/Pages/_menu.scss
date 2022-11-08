@@ -3,7 +3,7 @@
 
     &__img {
         width: 100%;
-        max-height: 50rem;
+        max-height: 30rem;
         object-fit: cover;
     }
 }
@@ -11,10 +11,10 @@
 .menu {
     padding: 2rem 1rem ;
     background-color: $color-lightgrey;
-    border-radius: $radius-btn;
-    margin-top: -3rem;
+    border-radius: $radius-btn $radius-btn 0 0;
     position: relative;
-    
+    max-width: $max-width;
+    margin: -3rem auto 0 auto;
     &__header {
         margin-bottom: 2rem;
     }
@@ -24,20 +24,29 @@
     &__icon {
         
     }
-
     &__footer {
         text-align: center;
     }
-
     &__btn {
-        font-size: 1rem;
-        
         border: none;
         color: $color-white;
         padding: 1rem 3rem;
         border-radius: 40px;
         box-shadow: $box-shadow;
         background: linear-gradient(355deg, $color-primary 10%, $color-secondary 90%);
+        font-size: 1rem;
         font-weight: $font-weight-bold;
+    }
+
+    @include larger-than-mobile{
+
+    }
+}
+
+.submenus {
+    @include larger-than-mobile{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 }

@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-darkgrey;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     
     &__title {
         font-family: $family-title;
@@ -22,5 +22,9 @@
     }
     &__item {
         list-style: none;
+    }
+    &__icon {
+        width: 1rem;
+        font-size: .8rem;
     }
 }
