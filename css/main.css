@@ -28,6 +28,67 @@ h2 {
   font-weight: 900;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.25rem;
+  border-radius: 40px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(355deg, #9356DC 10%, #FF79DA 90%);
+  font-weight: 500;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 .ordered-list {
   display: flex;
   flex-direction: column;
@@ -119,6 +180,31 @@ h2 {
   justify-content: space-between;
   padding: 1rem;
 }
+.card__btn {
+  position: relative;
+}
+.card__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.4s;
+}
+.card__icon--empty {
+  opacity: 0.7;
+}
+.card__icon--empty:hover {
+  opacity: 0;
+}
+.card__icon--fill {
+  background: linear-gradient(355deg, #9356DC 10%, #FF79DA 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.card__icon--fill:hover {
+  opacity: 1;
+}
 @media screen and (min-width: 1090px) {
   .card {
     flex: 0 0 48%;
@@ -129,7 +215,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 .submenu__title {
   text-transform: uppercase;
@@ -152,24 +240,154 @@ h2 {
   justify-content: space-between;
   align-items: flex-end;
   background: #fff;
-  padding: 1rem;
+  overflow: hidden;
+  cursor: pointer;
   border-radius: 20px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-animation: appear 0.4s;
+          animation: appear 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .menu-item__header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  padding: 1rem 0 1rem 1rem;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item__title {
+  margin: 0;
   font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item__desc {
+  margin: 0;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item__price {
+  padding: 1rem 1rem 1rem 0;
   font-weight: 700;
   color: #353535;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: auto;
+}
+.menu-item__verif {
+  background-color: #99E2D0;
+  height: 70px;
+  width: 4rem;
+  margin-right: -4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+}
+.menu-item__animatedIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.4s;
+}
+.menu-item__icon {
+  color: #99E2D0;
+}
+.menu-item:hover .menu-item__verif {
+  margin-right: 0;
+}
+.menu-item:hover .menu-item__animatedIcon {
+  transform: rotate(0);
+}
+
+.delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: hsla(0deg, 0%, 100%, 0.9);
+  -webkit-animation: loader 0.5s;
+          animation: loader 0.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.loader__spin {
+  position: fixed;
+  left: 50%;
+  margin-left: -60px;
+  top: 50%;
+  margin-top: -60px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-right: 16px solid #9356DC;
+  border-bottom: 16px solid #FF79DA;
+  border-left: 16px solid #99E2D0;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s ease;
+          animation: spin 3s ease;
 }
 
 .header {
@@ -257,15 +475,6 @@ h2 {
   font-weight: 300;
   color: #353535;
 }
-.introduction__link {
-  color: #fff;
-  text-decoration: none;
-  padding: 1rem 1.25rem;
-  border-radius: 40px;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(355deg, #9356DC 10%, #FF79DA 90%);
-  font-weight: 500;
-}
 
 .functioning {
   padding: 3rem 1.5rem;
@@ -302,9 +511,15 @@ h2 {
 }
 .background__img {
   width: 100%;
-  max-height: 30rem;
+  min-height: 10rem;
+  height: 50vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 1090px) {
+  .background__img {
+    max-height: 30rem;
+  }
 }
 
 .menu {
@@ -321,19 +536,21 @@ h2 {
 .menu__title {
   font-family: "Shrikhand", cursive;
 }
+.menu__icon {
+  bottom: 0.4rem;
+  top: auto;
+  right: 1rem;
+}
 .menu__footer {
   text-align: center;
 }
 .menu__btn {
   border: none;
-  color: #fff;
   padding: 1rem 3rem;
-  border-radius: 40px;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(355deg, #9356DC 10%, #FF79DA 90%);
   font-size: 1rem;
   font-weight: 700;
 }
+
 @media screen and (min-width: 1090px) {
   .submenus {
     display: flex;

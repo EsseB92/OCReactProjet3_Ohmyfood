@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
 
     &__title {
         text-transform: uppercase;
@@ -27,29 +29,89 @@
     align-items: flex-end;
 
     background: $color-white;
-    padding: 1rem;
-
+    overflow: hidden;
+    cursor: pointer;
+    
     border-radius: $radius-card;
     box-shadow: $box-shadow;
 
+    animation: appear .4s;
+    animation-fill-mode: both;
+    
 
     &__header {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
+        padding: 1rem 0 1rem 1rem;
+        flex: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__title {
+        margin: 0;
         font-weight: $font-weight-bold;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__desc {
+        margin: 0;
         font-weight: $font-weight-light;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__price {
+        padding: 1rem 1rem 1rem 0;
         font-weight: $font-weight-bold;
         color: $color-darkgrey;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: auto;
+        
     }
 
+    &__verif {
+        background-color: $color-tertiary;
+        height: 70px;
+        width: 4rem;
+        margin-right: -4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .4s;
+    }
+
+    &__animatedIcon {
+        height: 1.5rem;
+        width: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: white;
+        transform: rotate(180deg);
+        transition-duration: .4s;
+    }
+
+    &__icon {
+        color: $color-tertiary;
+    }
+
+    &:hover &__verif {
+        margin-right: 0;
+    }
+
+    &:hover &__animatedIcon {
+        transform: rotate(0);
+    }
 }
+
+@for $i from 0 to 10 {
+    .delay-#{$i} {
+      animation-delay:  calc($i * 0.1s);
+    }
+  }

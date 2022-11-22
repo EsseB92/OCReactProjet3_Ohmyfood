@@ -3,8 +3,14 @@
 
     &__img {
         width: 100%;
-        max-height: 30rem;
+        min-height: 10rem;
+        height: 50vw;
         object-fit: cover;
+    }
+    @include larger-than-mobile{
+        &__img {
+            max-height: 30rem;
+        }
     }
 }
 
@@ -22,24 +28,18 @@
         font-family: $family-title;
     }
     &__icon {
-        
+        bottom: 0.4rem;
+        top: auto;
+        right: 1rem;
     }
     &__footer {
         text-align: center;
     }
     &__btn {
         border: none;
-        color: $color-white;
         padding: 1rem 3rem;
-        border-radius: 40px;
-        box-shadow: $box-shadow;
-        background: linear-gradient(355deg, $color-primary 10%, $color-secondary 90%);
         font-size: 1rem;
         font-weight: $font-weight-bold;
-    }
-
-    @include larger-than-mobile{
-
     }
 }
 
