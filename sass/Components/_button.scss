@@ -3,11 +3,13 @@
     text-decoration: none;
     padding: 1rem 1.25rem;
     border-radius: 40px;
+    cursor: pointer;
+    font-weight: $font-weight-medium;
+
     box-shadow: $box-shadow;
     background: linear-gradient(355deg, $color-primary 10%, $color-secondary 90%);
-    font-weight: $font-weight-medium;
     transition-duration: 300ms;
-    cursor: pointer;
+    
 
     &:hover{
         opacity: 0.8;

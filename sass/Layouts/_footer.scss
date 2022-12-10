@@ -6,11 +6,12 @@
         font-family: $family-title;
         color: $color-white;
         margin-bottom: 1rem;
+        font-size: 1.5rem;
     }
-    &__logo {
-        height: 1rem;
-        filter: invert(1);
-    }
+    // &__logo {
+    //     height: 1rem;
+    //     filter: invert(1);
+    // }
     &__link {
         text-decoration: none;
         color: $color-white;

@@ -74,6 +74,10 @@
         
     }
 
+    &__icon {
+        color: $color-tertiary;
+    }
+
     &__verif {
         background-color: $color-tertiary;
         height: 70px;
@@ -85,6 +89,10 @@
         transition-duration: .4s;
     }
 
+    &:hover &__verif {
+        margin-right: 0;
+    }
+
     &__animatedIcon {
         height: 1.5rem;
         width: 1.5rem;
@@ -93,16 +101,9 @@
         justify-content: center;
         border-radius: 100%;
         background-color: white;
+
         transform: rotate(180deg);
         transition-duration: .4s;
-    }
-
-    &__icon {
-        color: $color-tertiary;
-    }
-
-    &:hover &__verif {
-        margin-right: 0;
     }
 
     &:hover &__animatedIcon {
@@ -114,4 +115,4 @@
     .delay-#{$i} {
       animation-delay:  calc($i * 0.1s);
     }
-  }
+}
